@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#">Millicent</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-center gap-1">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-btn ms-3" onclick="toggleTheme()" id="themeBtn">☾ Dark</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-7">
+        <span class="hero-tag">Available for work</span>
+        <h1>Hi, I'm <span>Millicent</span><br>Web Developer</h1>
+        <p>I build modern, responsive, and accessible websites that are both beautiful and functional. Passionate about clean code and great user experiences.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary-custom">View My Work</a>
+          <a href="#contact" class="btn-outline-custom">Connect with me</a>
+        </div>
+      </div>
+      <div class="col-lg-5 text-center">
+        <div class="hero-avatar"><img src="milly.jpeg" alt="Hero Image" class="img-fluid"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COUNTERS STRIP -->
+<div class="counters-strip">
+  <div class="container">
+    <div class="row">
+      <div class="col-4 counter-item">
+        <span class="counter-num" id="c1">0</span>
+        <span class="counter-label">Projects</span>
+      </div>
+      <div class="col-4 counter-item">
+        <span class="counter-num" id="c2">0</span>
+        <span class="counter-label">Skills</span>
+      </div>
+      <div class="col-4 counter-item">
+        <span class="counter-num" id="c3">0</span>
+        <span class="counter-label">Certificates</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="row gy-5 align-items-center">
+      <div class="col-lg-5">
+        <div class="about-img-placeholder"><img src="millie.jpeg" alt="About Me" class="img-fluid"></div>
+      </div>
+      <div class="col-lg-7 about-text ps-lg-5">
+        <span class="section-tag">About Me</span>
+        <div class="section-divider"></div>
+        <h2 class="section-title">Crafting digital experiences with purpose</h2>
+        <p>I am a passionate web developer currently pursuing studies in Web Development and Web Technologies. My focus is on building modern, accessible, and responsive websites that solve real problems.</p>
+        <p>I love combining clean code with thoughtful design — from well-structured HTML and CSS layouts to interactive JavaScript features and smooth user experiences.</p>
+        <p>When I'm not coding, I'm exploring new technologies, contributing to open-source projects, or sharpening my design skills.</p>
+        <a href="#contact" class="btn-primary-custom mt-3">Let's Connect</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section skills-bg">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">What I Know</span>
+      <div class="section-divider mx-auto"></div>
+      <h2 class="section-title">My Skills</h2>
+      <p class="section-sub mx-auto">A breakdown of the technologies and tools I work with regularly.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="skill-category">
+          <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+          <div class="skill-cat-title">Languages</div>
+          <div>
+            <span class="skill-pill">HTML5</span>
+            <span class="skill-pill">CSS3</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">Python</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="skill-category">
+          <div class="skill-cat-icon"><i class="fas fa-layer-group"></i></div>
+          <div class="skill-cat-title">Frameworks & Libraries</div>
+          <div>
+            <span class="skill-pill">Bootstrap</span>
+            <span class="skill-pill">React</span>
+            <span class="skill-pill">jQuery</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="skill-category">
+          <div class="skill-cat-icon"><i class="fas fa-tools"></i></div>
+          <div class="skill-cat-title">Tools & Platforms</div>
+          <div>
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">GitHub</span>
+            <span class="skill-pill">VS Code</span>
+            <span class="skill-pill">Figma</span>
+            <span class="skill-pill">Netlify</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="skill-category">
+          <div class="skill-cat-icon"><i class="fas fa-database"></i></div>
+          <div class="skill-cat-title">Databases</div>
+          <div>
+            <span class="skill-pill">MySQL</span>
+            <span class="skill-pill">Firebase</span>
+            <span class="skill-pill">SQLite</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">My Work</span>
+      <div class="section-divider mx-auto"></div>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-sub mx-auto">A selection of projects I've built, combining design and development.</p>
+    </div>
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="project-card">
+          <div class="project-num">01 — Featured</div>
+          <h5>Portfolio Website</h5>
+          <p>A personal portfolio built from scratch to showcase my skills, projects, and contact info. Includes dark/light mode, animations, and form validation.</p>
+          <div class="tech-stack">
+            <span class="tech-badge">HTML5</span>
+            <span class="tech-badge">CSS3</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">Bootstrap</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-proj btn-proj-solid"><i class="fas fa-external-link-alt me-1"></i>Live Demo</a>
+            <a href="#" class="btn-proj btn-proj-ghost"><i class="fab fa-github me-1"></i>GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="project-card">
+          <div class="project-num">02 — Web</div>
+          <h5>Business Website</h5>
+          <p>A fully responsive multi-page website for a local business, featuring a services section, testimonials, and a contact form with backend integration.</p>
+          <div class="tech-stack">
+            <span class="tech-badge">HTML5</span>
+            <span class="tech-badge">Bootstrap</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">Formspree</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-proj btn-proj-solid"><i class="fas fa-external-link-alt me-1"></i>Live Demo</a>
+            <a href="#" class="btn-proj btn-proj-ghost"><i class="fab fa-github me-1"></i>GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="project-card">
+          <div class="project-num">03 — App</div>
+          <h5>Task Manager App</h5>
+          <p>An interactive task management web app with add, delete, and complete functionality. Data persists using localStorage for a seamless user experience.</p>
+          <div class="tech-stack">
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">CSS3</span>
+            <span class="tech-badge">LocalStorage</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-proj btn-proj-solid"><i class="fas fa-external-link-alt me-1"></i>Live Demo</a>
+            <a href="#" class="btn-proj btn-proj-ghost"><i class="fab fa-github me-1"></i>GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact-bg">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="text-center mb-5">
+          <span class="section-tag">Get In Touch</span>
+          <div class="section-divider mx-auto"></div>
+          <h2 class="section-title">Let's Work Together</h2>
+          <p class="section-sub mx-auto">Have a project in mind or just want to say hi? Drop me a message below.</p>
+        </div>
+        <div class="contact-card">
+          <form id="contactForm" action="https://formspree.io/f/yourID" method="POST" onsubmit="return validateForm(event)">
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label class="form-label" for="name">Your Name</label>
+                <input class="form-control" type="text" id="name" name="name" placeholder="Itachi Uchiha">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="email">Email Address</label>
+                <input class="form-control" type="email" id="email" name="email" placeholder="itachiuchiha@gmail.com">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="message">Your Message</label>
+              <textarea class="form-control" id="message" name="message" placeholder="Send a message... "></textarea>
+            </div>
+            <button type="submit" class="btn-send">Send Message <i class="fas fa-paper-plane ms-2"></i></button>
+            <div class="form-message" id="formMsg"></div>
+          </form>
+          <hr style="border-color: var(--border); margin: 36px 0;">
+          <div class="social-icons justify-content-center">
+
+            <a href="https://www.facebook.com/millicent.masawi.2025 " target="_blank"  class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+
+            <a href="https://github.com/millicentmasawi" target="_blank" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+
+            <a href="https://www.linkedin.com/in/millicent-masawi-781221383/" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+
+            <a href="mailto:millicentmasawi21@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p>© 2026 <span>Alex.dev</span> — Built with HTML, CSS & JavaScript &hearts;</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // ── THEME ──
+  function toggleTheme() {
+    const isDark = document.body.getAttribute("data-theme") === "dark";
+    if (isDark) {
+      document.body.removeAttribute("data-theme");
+      localStorage.setItem("theme", "light");
+      document.getElementById("themeBtn").textContent = "☾ Dark";
+    } else {
+      document.body.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
+      document.getElementById("themeBtn").textContent = "☀ Light";
+    }
+  }
+
+  // ── INIT ──
+  window.onload = () => {
+    const saved = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (saved === "dark" || (!saved && prefersDark)) {
+      document.body.setAttribute("data-theme", "dark");
+      document.getElementById("themeBtn").textContent = "☀ Light";
+    }
+    startCounters();
+  };
+
+  // ── COUNTERS (Intersection Observer) ──
+  let countersStarted = false;
+  function startCounters() {
+    const strip = document.querySelector(".counters-strip");
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting && !countersStarted) {
+        countersStarted = true;
+        animateCounter("c1", 10);
+        animateCounter("c2", 15);
+        animateCounter("c3", 3);
+      }
+    }, { threshold: 0.5 });
+    observer.observe(strip);
+  }
+
+  function animateCounter(id, target) {
+    let count = 0;
+    const el = document.getElementById(id);
+    const step = Math.max(1, Math.floor(target / 30));
+    const interval = setInterval(() => {
+      count += step;
+      if (count >= target) { count = target; clearInterval(interval); }
+      el.textContent = count;
+    }, 60);
+  }
+
+  // ── FORM VALIDATION ──
+  function validateForm(e) {
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+    const msgEl = document.getElementById("formMsg");
+
+    msgEl.className = "form-message";
+
+    if (!name || !email || !message) {
+      msgEl.textContent = "⚠ Please fill in all fields before sending.";
+      msgEl.className = "form-message error";
+      e.preventDefault();
+      return false;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      msgEl.textContent = "⚠ Please enter a valid email address.";
+      msgEl.className = "form-message error";
+      e.preventDefault();
+      return false;
+    }
+
+    msgEl.textContent = "✓ Message sent! I'll get back to you soon.";
+    msgEl.className = "form-message success";
+    return true;
+  }
+</script>
+</body>
+</html>
